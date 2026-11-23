@@ -7,8 +7,8 @@ jobs:
      runs-on: ubuntu-22.04
      steps:
        - uses: actions/checkout@v4.4.0
-        - uses: actions/setup-node@v7.1.0
-          with:
+       - uses: actions/setup-node@v7.1.0
+         with:
            node-version: 18
            cache: 'npm'
         - run: npm ci
